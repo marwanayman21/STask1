@@ -1,0 +1,181 @@
+:root{
+  /*COLORS*/
+  --main-color: #8f754f;
+  --heading-color: #303030;
+  --color-gray: #666;
+  --color-gray-2: #444;
+  /* Fontweight */
+  --fw-600: 600;
+  --fw-700: 700;
+  --fw-500: 500;
+  /* transition */
+  --transition: all .5s ease;
+  /*Font family*/
+  --custome-font: 'Alegreya', serif, monospace;
+  --normal-font: 'Alegreya Sans',serif,monospace;;
+}
+body{
+  font-family: var(--normal-font);
+  color: var(--color-gray);
+}
+
+.intil-background{
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  position: relative;
+}
+h1, h2, h3, h4, h5, h6{
+  font-family: var(--custome-font);
+}
+.bg-main{
+  background-color: var(--main-color) !important;
+}
+.bg-sec{
+  background-color: #403d38;
+}
+.color-main {
+  color: var(--main-color)
+}
+.heading-color{
+  color: var(--heading-color)
+}
+
+/*HOME SECTION */
+.home{
+  background-image: url(/images/background-image.jpg);
+}
+.home-content h1{
+  font-weight: var(--fw-600);
+}
+.home-content p{
+  line-height: 1.86em;
+}
+.home button{
+  margin-right: 5px;
+  padding: 15px 20px;
+  cursor: pointer;
+  transition: var(--transition);
+}
+.learn-more{
+  border: none;
+}
+.contact-us{
+  border: 1px solid #fff;
+}
+.learn-more:hover, 
+.contact-us:hover{
+  background-color: #fff !important;
+  color: var(--heading-color) !important;
+}
+
+.custome-border{
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(255,255,255,.5)
+}
+.hover-white{
+  transition: var(--transition)
+}
+.hover-white:hover{
+  color: #fff !important;
+}
+
+.footer{
+  background-color:#353330;
+}
+
+.footer .social li{
+  color: var(--main-color);
+  cursor: pointer;
+  transition: var(--transition)
+}
+.footer .social li:hover{
+  transform: scale(1.1);
+}
+#f:hover{
+  color: #4267B2
+}
+#g:hover{
+  color: #db4a39
+}
+#l:hover{
+  color: #0072b1;
+}
+#t:hover{
+  color: #00acee;
+}
+/*demo-panel-menu*/
+.demo-panel-menu{
+  position: fixed;
+  top: 200px;
+  right: 0;
+  background-color: #f8f8f8;
+  padding: 7px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  z-index: 3;
+}
+.demo-panel-menu div{
+  width: 30px;
+  position: relative;
+  cursor: pointer;
+}
+.demo-panel-menu span{
+  position: absolute;
+  top: 0;
+  color: #fff;
+  font-weight: 500;
+  background-color: rgb(31, 98, 197);
+  padding: 2px 8px;
+  border-radius: 3px;
+  display: none;
+}
+.demo-panel-menu div img{
+  width: 100%;
+}
+.demo-panel-menu .dimo-1{
+  margin-bottom: 20px; 
+}
+.demo-1 span{
+  left: -126px;
+}
+.demo-2 span{
+  left:  -138px;
+}
+.demo-1:hover  span{
+  display: block;
+}
+.demo-2:hover  span{
+  display: block;
+}
+/*Pointer Animations*/
+
+.pointer{
+  width: 30px;
+  height: 50px;
+  bottom: 10px;
+  cursor: pointer;
+}
+.pointer span{
+  height: 8px;
+  width: 8px;
+  top: 1px;
+  animation-name: moveTobottom; 
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+}
+@keyframes moveTobottom {
+  0%{
+      opacity: 0;
+      top: 10%;
+  }
+  50%{
+      opacity: 1;
+      top: 50%;
+  }
+  100%{
+      opacity: 0;
+      top: 80%;
+  }
+}
